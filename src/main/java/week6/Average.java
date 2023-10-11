@@ -14,7 +14,6 @@ public class Average {
 
         Scanner sc = new Scanner(System.in);
 
-
         while(i<=10){
             System.out.println("Enter number " + i);
             int input = sc.nextInt();

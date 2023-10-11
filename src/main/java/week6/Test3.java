@@ -14,8 +14,6 @@ public class Test3 {
 
     public static void main(String[] args) {
         System.out.println("Enter color : ");
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
 
         Color clr = Color.BLUE;
         Size sz = Size.L;
