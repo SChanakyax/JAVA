@@ -17,6 +17,10 @@ public class StudentX {
         this.regNo = regNo;
     }
 
+    static void print() {
+        System.out.println("Static methods donot need any objects. Class can directly call static methods !");
+    }
+
     public float calGrade(int s1, int s2, int s3, int s4) {
         ///total
         int total = s1 + s2 + s3 + s4;
@@ -75,10 +79,6 @@ public class StudentX {
 
     public void setSubject(String subject) {
         this.subject = subject;
-    }
-
-    static void print() {
-        System.out.println("Static methods donot need any objects. Class can directly call static methods !");
     }
 
 }
