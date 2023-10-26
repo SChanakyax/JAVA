@@ -36,7 +36,8 @@ import java.util.Scanner;
 public class Shop {
     public static void main(String[] args) {
         String name;
-        int quantity, total=0, i=0,itemCode;
+        int quantity, total=0, i=0,itemCode, loyalityNumber;
+        float tTotal = 0;
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to ABC Shop ");
@@ -75,16 +76,34 @@ public class Shop {
                     quantity = sc.nextInt();
 
                     System.out.println(items[i][2]);
-                    total = total +  (quantity * Integer.parseInt(items[i][2]));
-
+                    tTotal = total + (quantity * Integer.parseInt(items[i][2]));
+                    break;
                 }else {
-                    System.out.println("Item not found ");
+                    System.out.println("Item Not found");
                 }
             }
         } while(itemCode != 0);
 
+        do{
+            System.out.println("Enter the loyality number : ");
+            loyalityNumber = sc.nextInt();
 
-        System.out.println(total);
+            if(loyalityNumber / 10 == 10){
+                tTotal +=  (tTotal * 0.9);
+                System.out.println("Discount is 10% ");
+            }else if (loyalityNumber / 20 == 20) {
+                tTotal += (tTotal * 0.8);
+                System.out.println("Discount is 20% ");
+            }else {
+                System.out.println("re enter the loyality number");
+            }
+
+
+        } while (String.valueOf(loyalityNumber).length() > 4);
+
+        System.out.print("Amount to be paid  ");
+        System.out.println(tTotal);
+
 
     }
 }
