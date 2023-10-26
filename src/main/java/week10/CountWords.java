@@ -1,7 +1,5 @@
 package week10;
 
-import java.util.Scanner;
-
 public class CountWords {
     static int wordcount(String string)
     {

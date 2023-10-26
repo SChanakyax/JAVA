@@ -6,7 +6,6 @@ public class ArrSqCube {
     public static void main(String[] args) {
 
         int numbers[][] = new int[5][5];
-        int input;
 
         Scanner sc = new Scanner(System.in);
 

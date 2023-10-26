@@ -1,6 +1,5 @@
 package week10;
 
-import java.util.Scanner;
 
 /**
  * remove duplicate characters

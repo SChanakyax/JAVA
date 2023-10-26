@@ -17,6 +17,10 @@ public class Array {
             System.out.println(numbers[i][0] + " " + numbers[i][1]);
         }
 
+        //enhanced for loop
+        for (int[] number : numbers) {
+            System.out.println(number[0] + " " + number[1]);
+        }
     }
 }
 
